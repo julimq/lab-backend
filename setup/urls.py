@@ -21,3 +21,6 @@ from django.urls import path
 from todos.views import home
 
 urlpatterns = [path("admin/", admin.site.urls), path("", home)]
+
+from todos.views import todo_list
+urlpatterns = [path("admin/", admin.site.urls), path("", todo_list)]
